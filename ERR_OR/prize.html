@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ERR_OR — Prize Pool</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Mono:wght@300;400;500&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="theme.css"/>
+  <script src="theme.js"></script>
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav>
+  <a href="index.html" class="nav-logo">ERR<span>_</span>OR</a>
+  <ul class="nav-links">
+    <li><a href="hry.html">Hry</a></li>
+    <li><a href="prize.html">Prize Pool</a></li>
+    <li><a href="registrace.html">Registrace</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+  </ul>
+  <button class="theme-trigger" id="themeTrigger" aria-label="Změnit téma">THEME</button>
+  <a href="registrace.html" class="nav-cta">REGISTROVAT TYM</a>
+</nav>
+
+<div class="page-header">
+  <div class="page-tag">ERR_OR 2025 — Odměny</div>
+  <h1 class="page-title glitch" data-text="PRIZE POOL">PRIZE<br><span>POOL</span></h1>
+</div>
+
+<div class="prize-section">
+  <div class="prize-inner">
+    <div class="prize-overlay" id="prizeOverlay" onclick="revealPrize()">
+      <div class="prize-overlay-title">PRESS<br><span>HERE</span></div>
+      <div class="prize-overlay-hint">▶ to reveal prize pool</div>
+    </div>
+
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <span class="section-title">Prize Pool</span>
+    </div>
+    <div class="flap-board-wrap">
+      <div class="flap-board-label">Celkový prize pool — roste s každou registrací</div>
+      <div class="flap-row">
+        <div class="flap-currency">Kč</div>
+        <div class="flap-digit" id="fd0"><div class="flap-top"><span>0</span></div><div class="flap-bottom"><span>0</span></div><div class="flap-card"><span>0</span></div></div>
+        <div class="flap-digit" id="fd1"><div class="flap-top"><span>0</span></div><div class="flap-bottom"><span>0</span></div><div class="flap-card"><span>0</span></div></div>
+        <div class="flap-digit" id="fd2"><div class="flap-top"><span>0</span></div><div class="flap-bottom"><span>0</span></div><div class="flap-card"><span>0</span></div></div>
+        <div class="flap-sep">.</div>
+        <div class="flap-digit" id="fd3"><div class="flap-top"><span>0</span></div><div class="flap-bottom"><span>0</span></div><div class="flap-card"><span>0</span></div></div>
+        <div class="flap-digit" id="fd4"><div class="flap-top"><span>0</span></div><div class="flap-bottom"><span>0</span></div><div class="flap-card"><span>0</span></div></div>
+        <div class="flap-digit" id="fd5"><div class="flap-top"><span>0</span></div><div class="flap-bottom"><span>0</span></div><div class="flap-card"><span>0</span></div></div>
+      </div>
+      <div class="flap-info"><span class="dot">●</span> &nbsp;Prize pool roste s každou registrací týmu</div>
+    </div>
+  </div>
+</div>
+
+<section class="section" style="border-top: 1px solid var(--border);">
+  <div class="section-header">
+    <span class="section-num">02</span>
+    <span class="section-title">Rozdělení cen</span>
+  </div>
+  <div class="podium-grid">
+
+    <div class="podium-card podium-second">
+      <div class="podium-rank">#2</div>
+      <div class="podium-label">DRUHÉ MÍSTO</div>
+      <div class="podium-pct">25<span>%</span></div>
+      <div class="podium-sub">prize poolu</div>
+    </div>
+
+    <div class="podium-card podium-first">
+      <div class="podium-rank podium-rank-gold">#1</div>
+      <div class="podium-label" style="color:var(--red);">PRVNÍ MÍSTO</div>
+      <div class="podium-pct">60<span>%</span></div>
+      <div class="podium-sub">prize poolu</div>
+    </div>
+
+    <div class="podium-card podium-third">
+      <div class="podium-rank">#3</div>
+      <div class="podium-label">TŘETÍ MÍSTO</div>
+      <div class="podium-pct">15<span>%</span></div>
+      <div class="podium-sub">prize poolu</div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">ERR<span>_</span>OR</div>
+  <div class="footer-info">SPŠ Kutná Hora &nbsp;///&nbsp; 2025</div>
+</footer>
+<script src="script.js"></script>
+
+<!-- THEME PANEL OVERLAY -->
+<div class="theme-panel-overlay" id="themeOverlay"></div>
+<div class="theme-panel" id="themePanel">
+  <div class="theme-panel-inner">
+    <div class="theme-panel-label">Barevné schéma</div>
+    <div class="theme-options">
+      <button class="theme-option" data-theme="dark" onclick="setTheme('dark')">
+        <div class="tp-preview tp-dark">
+          <div class="tp-nav"><span class="tp-logo">ERR<em>_</em>OR</span></div>
+          <div class="tp-hero"><div class="tp-title">ERR<em>_</em>OR</div><div class="tp-sub">SPŠ Kutná Hora — Esport Turnaj 2025</div><div class="tp-btn">REGISTROVAT TÝM</div></div>
+        </div>
+        <div class="tp-meta"><span class="tp-name">DARK</span><span class="tp-tag">Default</span></div>
+      </button>
+      <button class="theme-option" data-theme="light" onclick="setTheme('light')">
+        <div class="tp-preview tp-light">
+          <div class="tp-nav"><span class="tp-logo">ERR<em>_</em>OR</span></div>
+          <div class="tp-hero"><div class="tp-title">ERR<em>_</em>OR</div><div class="tp-sub">SPŠ Kutná Hora — Esport Turnaj 2025</div><div class="tp-btn">REGISTROVAT TÝM</div></div>
+        </div>
+        <div class="tp-meta"><span class="tp-name">LIGHT</span><span class="tp-tag">Alternativa</span></div>
+      </button>
+      <button class="theme-option" data-theme="sps" onclick="setTheme('sps')">
+        <div class="tp-preview tp-sps">
+          <div class="tp-nav"><span class="tp-logo">ERR<em>_</em>OR</span></div>
+          <div class="tp-hero"><div class="tp-title">ERR<em>_</em>OR</div><div class="tp-sub">SPŠ Kutná Hora — Esport Turnaj 2025</div><div class="tp-btn">REGISTROVAT TÝM</div></div>
+        </div>
+        <div class="tp-meta"><span class="tp-name">SPŠ KH</span><span class="tp-tag">Signature</span></div>
+      </button>
+    </div>
+    <div class="tp-hint">ESC nebo klik mimo pro zavření</div>
+  </div>
+</div>
+</body>
+</html>
