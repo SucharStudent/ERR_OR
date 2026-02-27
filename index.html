@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ERR_OR — Esport Turnaj SPŠ Kutná Hora</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="theme.css"/>
+  <script src="theme.js"></script>
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav>
+  <a href="index.html" class="nav-logo">ERR<span>_</span>OR</a>
+  <ul class="nav-links">
+    <li><a href="hry.html">Hry</a></li>
+    <li><a href="prize.html">Prize Pool</a></li>
+    <li><a href="registrace.html">Registrace</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+  </ul>
+  <button class="theme-trigger" id="themeTrigger" aria-label="Změnit téma">THEME</button>
+  <a href="registrace.html" class="nav-cta">REGISTROVAT TYM</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-tag">SPŠ Kutná Hora — Esport Turnaj 2025</div>
+    <h1 class="hero-title glitch" data-text="ERR_OR">ERR<br><span class="dash">_</span>OR</h1>
+    <p class="hero-sub">Největší školní esport turnaj ve středních Čechách. Zaregistruj tým a dokažte kdo je nejlepší.</p>
+    <div class="hero-actions">
+      <a href="registrace.html" class="btn-primary">REGISTROVAT TYM</a>
+      <a href="hry.html" class="btn-ghost">Zjistit více</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="trophy-wrap glitch" data-text="">
+      <div class="trophy-glow"></div>
+      <img src="trophy.png" class="trophy-svg-main" alt="Trophy" style="width:100%;height:100%;object-fit:contain;display:block;"/>
+    </div>
+  </div>
+</section>
+
+<div class="ticker">
+  <div class="ticker-inner">
+    <span>League of Legends</span><span>///</span><span>Valorant</span><span>///</span><span>CS2</span><span>///</span><span>SPŠ Kutná Hora</span><span>///</span><span>15. března 2025</span><span>///</span><span>Aula SPŠ</span><span>///</span>
+    <span>League of Legends</span><span>///</span><span>Valorant</span><span>///</span><span>CS2</span><span>///</span><span>SPŠ Kutná Hora</span><span>///</span><span>15. března 2025</span><span>///</span><span>Aula SPŠ</span><span>///</span>
+  </div>
+</div>
+
+<div class="countdown-bar">
+  <div class="cd-label">Odpočet do turnaje</div>
+  <div class="cd-units">
+    <div class="cd-unit"><span class="cd-num" id="cd-d">00</span><span class="cd-unit-label">Dní</span></div>
+    <div class="cd-sep">:</div>
+    <div class="cd-unit"><span class="cd-num" id="cd-h">00</span><span class="cd-unit-label">Hodin</span></div>
+    <div class="cd-sep">:</div>
+    <div class="cd-unit"><span class="cd-num" id="cd-m">00</span><span class="cd-unit-label">Minut</span></div>
+    <div class="cd-sep">:</div>
+    <div class="cd-unit"><span class="cd-num" id="cd-s">00</span><span class="cd-unit-label">Sekund</span></div>
+  </div>
+  <div class="cd-event">
+    <div class="cd-date">15. 03. 2025</div>
+    <div class="cd-place">SPŠ Kutná Hora — Aula</div>
+  </div>
+</div>
+
+<div class="stats-row">
+  <div class="stat-item"><div class="stat-num">32<span>+</span></div><div class="stat-label">Týmů</div></div>
+  <div class="stat-item"><div class="stat-num">3</div><div class="stat-label">Hry</div></div>
+  <div class="stat-item"><div class="stat-num">1<span>D</span></div><div class="stat-label">Délka turnaje</div></div>
+  <div class="stat-item"><div class="stat-num">∞</div><div class="stat-label">Aura</div></div>
+</div>
+
+<footer>
+  <div class="footer-logo">ERR<span>_</span>OR</div>
+  <div class="footer-info">SPŠ Kutná Hora &nbsp;///&nbsp; 2025</div>
+</footer>
+<script src="script.js"></script>
+
+<!-- THEME PANEL OVERLAY -->
+<div class="theme-panel-overlay" id="themeOverlay"></div>
+<div class="theme-panel" id="themePanel">
+  <div class="theme-panel-inner">
+    <div class="theme-panel-label">Barevné schéma</div>
+    <div class="theme-options">
+      <button class="theme-option" data-theme="dark" onclick="setTheme('dark')">
+        <div class="tp-preview tp-dark">
+          <div class="tp-nav"><span class="tp-logo">ERR<em>_</em>OR</span></div>
+          <div class="tp-hero"><div class="tp-title">ERR<em>_</em>OR</div><div class="tp-sub">SPŠ Kutná Hora — Esport Turnaj 2025</div><div class="tp-btn">REGISTROVAT TÝM</div></div>
+        </div>
+        <div class="tp-meta"><span class="tp-name">DARK</span><span class="tp-tag">Default</span></div>
+      </button>
+      <button class="theme-option" data-theme="light" onclick="setTheme('light')">
+        <div class="tp-preview tp-light">
+          <div class="tp-nav"><span class="tp-logo">ERR<em>_</em>OR</span></div>
+          <div class="tp-hero"><div class="tp-title">ERR<em>_</em>OR</div><div class="tp-sub">SPŠ Kutná Hora — Esport Turnaj 2025</div><div class="tp-btn">REGISTROVAT TÝM</div></div>
+        </div>
+        <div class="tp-meta"><span class="tp-name">LIGHT</span><span class="tp-tag">Alternativa</span></div>
+      </button>
+      <button class="theme-option" data-theme="sps" onclick="setTheme('sps')">
+        <div class="tp-preview tp-sps">
+          <div class="tp-nav"><span class="tp-logo">ERR<em>_</em>OR</span></div>
+          <div class="tp-hero"><div class="tp-title">ERR<em>_</em>OR</div><div class="tp-sub">SPŠ Kutná Hora — Esport Turnaj 2025</div><div class="tp-btn">REGISTROVAT TÝM</div></div>
+        </div>
+        <div class="tp-meta"><span class="tp-name">SPŠ KH</span><span class="tp-tag">Signature</span></div>
+      </button>
+    </div>
+    <div class="tp-hint">ESC nebo klik mimo pro zavření</div>
+  </div>
+</div>
+</body>
+</html><div class="trophy-wrap glitch" data-text="">
+      <div class="trophy-glow"></div>
+      <img src="trophy.png" class="trophy-svg-main" alt="Trophy"/>
+    </div>

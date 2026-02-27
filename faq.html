@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ERR_OR — FAQ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="theme.css"/>
+  <script src="theme.js"></script>
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav>
+  <a href="index.html" class="nav-logo">ERR<span>_</span>OR</a>
+  <ul class="nav-links">
+    <li><a href="hry.html">Hry</a></li>
+    <li><a href="prize.html">Prize Pool</a></li>
+    <li><a href="registrace.html">Registrace</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+  </ul>
+  <button class="theme-trigger" id="themeTrigger" aria-label="Změnit téma">THEME</button>
+  <a href="registrace.html" class="nav-cta">REGISTROVAT TYM</a>
+</nav>
+
+<div class="page-header">
+  <div class="page-tag">ERR_OR 2025 — Časté dotazy</div>
+  <h1 class="page-title glitch" data-text="CASTE DOTAZY">ČASTE<br><span>DOTAZY</span></h1>
+</div>
+
+<section class="section">
+  <div class="section-header">
+    <span class="section-num">04</span>
+    <span class="section-title">FAQ</span>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Jak se zaregistrovat?<span class="faq-icon">+</span></button>
+      <div class="faq-a">Vyplňte registrační formulář na stránce Registrace. Po odeslání dostanete potvrzení na email. Registrace je otevřená do 10. 3. 2025.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Kolik hráčů tvoří tým?<span class="faq-icon">+</span></button>
+      <div class="faq-a">Každý tým musí mít přesně 5 hráčů. Doporučujeme přihlásit i náhradníka pro případ nemoci nebo absence.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Kdy a kde se turnaj koná?<span class="faq-icon">+</span></button>
+      <div class="faq-a">Turnaj se koná 15. března 2025 od 9:00 v aule SPŠ Kutná Hora. Příchod a check-in od 8:30.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Je účast zdarma?<span class="faq-icon">+</span></button>
+      <div class="faq-a">Ano, účast na turnaji je zcela zdarma pro všechny studenty SPŠ Kutná Hora.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Jaká jsou pravidla?<span class="faq-icon">+</span></button>
+      <div class="faq-a">Platí standardní pravidla dané hry. Jakékoli podvádění nebo nefér chování vede k diskvalifikaci. Podrobná pravidla obdržíte po registraci emailem.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Musíme mít vlastní počítače?<span class="faq-icon">+</span></button>
+      <div class="faq-a">Ne, počítače jsou zajištěny organizátory. Hráči si mohou přinést vlastní periferie (myš, klávesnice, sluchátka).</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Mohu se přihlásit sám bez týmu?<span class="faq-icon">+</span></button>
+      <div class="faq-a">Turnaj je týmový, minimální počet jsou 5 hráči. Pokud hledáš spoluhráče, napiš nám na Discord a pomůžeme ti tým najít.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Kde najdu výsledky a bracket?<span class="faq-icon">+</span></button>
+      <div class="faq-a">Bracket a výsledky budou zveřejněny na webu v den turnaje. Sledujte také náš Discord pro live aktualizace.</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">ERR<span>_</span>OR</div>
+  <div class="footer-info">SPŠ Kutná Hora &nbsp;///&nbsp; 2025</div>
+</footer>
+<script src="script.js"></script>
+
+<!-- THEME PANEL OVERLAY -->
+<div class="theme-panel-overlay" id="themeOverlay"></div>
+<div class="theme-panel" id="themePanel">
+  <div class="theme-panel-inner">
+    <div class="theme-panel-label">Barevné schéma</div>
+    <div class="theme-options">
+      <button class="theme-option" data-theme="dark" onclick="setTheme('dark')">
+        <div class="tp-preview tp-dark">
+          <div class="tp-nav"><span class="tp-logo">ERR<em>_</em>OR</span></div>
+          <div class="tp-hero"><div class="tp-title">ERR<em>_</em>OR</div><div class="tp-sub">SPŠ Kutná Hora — Esport Turnaj 2025</div><div class="tp-btn">REGISTROVAT TÝM</div></div>
+        </div>
+        <div class="tp-meta"><span class="tp-name">DARK</span><span class="tp-tag">Default</span></div>
+      </button>
+      <button class="theme-option" data-theme="light" onclick="setTheme('light')">
+        <div class="tp-preview tp-light">
+          <div class="tp-nav"><span class="tp-logo">ERR<em>_</em>OR</span></div>
+          <div class="tp-hero"><div class="tp-title">ERR<em>_</em>OR</div><div class="tp-sub">SPŠ Kutná Hora — Esport Turnaj 2025</div><div class="tp-btn">REGISTROVAT TÝM</div></div>
+        </div>
+        <div class="tp-meta"><span class="tp-name">LIGHT</span><span class="tp-tag">Alternativa</span></div>
+      </button>
+      <button class="theme-option" data-theme="sps" onclick="setTheme('sps')">
+        <div class="tp-preview tp-sps">
+          <div class="tp-nav"><span class="tp-logo">ERR<em>_</em>OR</span></div>
+          <div class="tp-hero"><div class="tp-title">ERR<em>_</em>OR</div><div class="tp-sub">SPŠ Kutná Hora — Esport Turnaj 2025</div><div class="tp-btn">REGISTROVAT TÝM</div></div>
+        </div>
+        <div class="tp-meta"><span class="tp-name">SPŠ KH</span><span class="tp-tag">Signature</span></div>
+      </button>
+    </div>
+    <div class="tp-hint">ESC nebo klik mimo pro zavření</div>
+  </div>
+</div>
+</body>
+</html>
